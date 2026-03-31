@@ -1,0 +1,88 @@
+:root {
+  /* Rich Dark Theme Colors */
+  --bg-primary: #040509;      /* Ultra deep indigo-black */
+  --bg-secondary: #0a0c10;
+  --bg-tertiary: #13161c;
+  
+  /* Neons and Accents */
+  --accent-color: #00ffaa;    /* High-contrast neon emerald */
+  --accent-color-hover: #33ffbb;
+  --accent-color-transparent: rgba(0, 255, 170, 0.15);
+  --accent-glow: rgba(0, 255, 170, 0.4);
+  --accent-color-2: #059669;  /* Emerald dark */
+  
+  /* UI Colors */
+  --text-primary: #ffffff;
+  --text-secondary: #94a3b8;  /* Slate 400 */
+  --border-color: rgba(255, 255, 255, 0.08);
+  
+  /* Glassmorphism Variables */
+  --glass-bg: rgba(10, 12, 16, 0.45);
+  --glass-border: rgba(255, 255, 255, 0.05);
+  --glass-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.5);
+  
+  /* Status Colors */
+  --danger: #ef4444;
+  --warning: #f59e0b;
+  --success: #10b981;
+  
+  /* Typography */
+  --font-heading: 'Outfit', sans-serif;
+  --font-body: 'Inter', sans-serif;
+  
+  font-family: var(--font-body);
+  line-height: 1.6;
+  font-weight: 400;
+  color-scheme: dark;
+  color: var(--text-primary);
+  background-color: var(--bg-primary);
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  margin: 0;
+  display: flex;
+  min-height: 100vh;
+  min-width: 320px;
+  background-color: var(--bg-primary);
+  overflow-x: hidden;
+  /* Premium Noise Filter Simulation using a small radial repeating pattern if desired, but keep clean for now */
+}
+
+/* Headings inherit the Outfit font */
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-heading);
+  font-weight: 600;
+  letter-spacing: -0.02em;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+#root {
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+}
+
+/* Elevated Custom Scrollbar */
+::-webkit-scrollbar { width: 6px; height: 6px; }
+::-webkit-scrollbar-track { background: transparent; }
+::-webkit-scrollbar-thumb { 
+  background: rgba(255, 255, 255, 0.1); 
+  border-radius: 10px; 
+}
+::-webkit-scrollbar-thumb:hover { 
+  background: var(--accent-color); 
+  box-shadow: 0 0 10px var(--accent-glow);
+}
+
+::selection {
+  background: var(--accent-color-transparent);
+  color: var(--accent-color);
+}
