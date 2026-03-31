@@ -18,6 +18,19 @@
 
 <br />
 
+<p align="center">
+  <img src="public/screenshots/image2.png" alt="Hero Screen" width="100%" style="border-radius: 12px; box-shadow: 0 10px 30px rgba(0,0,0,0.5);">
+</p>
+
+## 🖼️ Gallery Preview
+
+<table>
+  <tr>
+    <td width="50%"><img src="public/screenshots/image.png" alt="Main Interface" style="border-radius: 8px;"></td>
+    <td width="50%"><img src="public/screenshots/image1.png" alt="Transactions and Cards" style="border-radius: 8px;"></td>
+  </tr>
+</table>
+
 ## ✨ About The Project
 
 Vault NeoBank is an open-source technical demonstration designed to showcase the absolute bleeding-edge of modern web aesthetics and React capabilities without relying on heavy UI frameworks (like Material-UI or Tailwind). 
